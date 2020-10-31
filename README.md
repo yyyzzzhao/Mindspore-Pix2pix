@@ -5,7 +5,7 @@ Mindspore Implementation of Pix2pix Model
 - Our label-to-streetview results
 <p align='center'>  
   <img src='imgs/cityscapes.png' width='400'/>
-</p>
+
 - label-to-facades results
 <p align='center'>  
   <img src='imgs/facades.png' width='400'/>
