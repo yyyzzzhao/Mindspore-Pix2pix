@@ -14,6 +14,7 @@ Tutorials about this deep learning framework is on [Mindspore](https://www.minds
 
 ## Some metrics on Cityscapes dataset
 - FCN scores in our model
+
 |Parameter|Mean pixel accuracy|Mean class accuracy|Mean class IoU|
 |:-|:-:|:-:|:-:|
 |G8-D3|**0.57**|**0.23**|**0.14**|
@@ -21,6 +22,7 @@ Tutorials about this deep learning framework is on [Mindspore](https://www.minds
 |G8-D4|0.54|0.21|0.13|
 
 - Metrics in [paper](https://arxiv.org/pdf/1703.10593.pdf)
+
 |Parameter|Mean pixel accuracy|Mean class accuracy|Mean class IoU|
 |:-|:-:|:-:|:-:|
 |G8-D3|**0.66**|**0.23**|**0.17**|
