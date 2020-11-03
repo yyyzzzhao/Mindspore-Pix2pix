@@ -17,10 +17,10 @@ Tutorials about this deep learning framework is on [Mindspore](https://www.minds
 
 |Parameter|Mean pixel accuracy|Mean class accuracy|Mean class IoU|
 |:-|:-:|:-:|:-:|
-|G8-D3(TruncNormal)|0.57|0.23|0.14|
+|G8-D3(TruncNormal)|**0.64**|**0.25**|**0.17**|
 |G7-D4(TruncNormal)|0.57|0.22|0.14|
-|G8-D4(TruncNormal)|0.61|0.24|**0.16**|
-|G8-D3(Normal)|**0.62**|**0.25**|**0.16**|
+|G8-D4(TruncNormal)|0.61|0.24|0.16|
+|G8-D3(Normal)|0.62|**0.25**|0.16|
 
 - Metrics in [paper](https://arxiv.org/pdf/1703.10593.pdf)
 
@@ -28,31 +28,33 @@ Tutorials about this deep learning framework is on [Mindspore](https://www.minds
 |:-|:-:|:-:|:-:|
 |G8-D3|**0.66**|**0.23**|**0.17**|
 |GT|0.80|0.23|0.17|
-|GT(test)|0.61|0.23|0.15|
+|GT(test)|0.62|0.23|0.16|
+
+**Compare:** In our implementation, the **Mean pixel accuracy** slightly droped, while the **Mean class accuracy** increased by 0.02 **(0.23 --> 0.25)**. The **Mean class IoU** keeps the same with raw implementation.
 
 - Detailed each class segmentation results are given below
 
 |Class name     |Accuracy |Iou     |
 |:-|:-:|:-:|
-|road           | 0.874824|0.671461|
-|sidewalk       | 0.278808|0.157644|
-|building       | 0.605877|0.465707|
-|wall           | 0.000313|0.000310|
-|fence          | 0.000480|0.000473|
-|pole           | 0.002323|0.002223|
-|traffic light  | 0.000137|0.000134|
-|traffic sign   | 0.001298|0.001266|
-|vegetation     | 0.885950|0.491481|
-|terrain        | 0.565743|0.202593|
-|sky            | 0.925028|0.790719|
-|person         | 0.001581|0.001507|
-|rider          | 0.000007|0.000007|
-|car            | 0.570559|0.334637|
-|truck          | 0.000016|0.000016|
-|bus            | 0.000033|0.000032|
-|train          | 0.000024|0.000024|
-|motorcycle     | 0.000016|0.000016|
-|bicycle        | 0.000021|0.000021|
+|road           | 0.907593|0.695943|
+|sidewalk       | 0.270474|0.179812|
+|building       | 0.561524|0.458200|
+|wall           | 0.000225|0.000223|
+|fence          | 0.000645|0.000639|
+|pole           | 0.002148|0.002037|
+|traffic light  | 0.000176|0.000171|
+|traffic sign   | 0.000772|0.000751|
+|vegetation     | 0.939161|0.509794|
+|terrain        | 0.581532|0.235047|
+|sky            | 0.911143|0.776436|
+|person         | 0.002126|0.002021|
+|rider          | 0.000015|0.000015|
+|car            | 0.636050|0.342392|
+|truck          | 0.000020|0.000020|
+|bus            | 0.000010|0.000010|
+|train          | 0.000012|0.000012|
+|motorcycle     | 0.000020|0.000019|
+|bicycle        | 0.000026|0.000026|
 
 ***
 
