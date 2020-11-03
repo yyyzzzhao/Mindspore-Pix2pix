@@ -28,7 +28,6 @@ Tutorials about this deep learning framework is on [Mindspore](https://www.minds
 |:-|:-:|:-:|:-:|
 |G8-D3|**0.66**|**0.23**|**0.17**|
 |GT|0.80|0.23|0.17|
-|GT(test)|0.62|0.23|0.16|
 
 **Compare:** In our implementation, the **Mean pixel accuracy** slightly droped, while the **Mean class accuracy** increased by 0.02 **(0.23 --> 0.25)**. The **Mean class IoU** keeps the same with raw implementation.
 
