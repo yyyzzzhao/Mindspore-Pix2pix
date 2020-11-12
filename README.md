@@ -53,10 +53,10 @@ C is Convlution and CD is Convolution followed by concatenate. The kernel size i
 
 Dataset used: [Cityscapes](https://www.cityscapes-dataset.com/)
 
-	+ Dataset size: 105M, 3475 images, downsample to 256*256.
-    	+ 2975 train images 
-		+ 500 validation images
-	+ Data format：.png images
+	Dataset size: 105M, 3475 images, downsample to 256*256.
+    	2975 train images 
+		500 validation images
+	Data format：.png images
 
 Dataset used can refer to [paper](http://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Cordts_The_Cityscapes_Dataset_CVPR_2016_paper.html).
 
@@ -77,10 +77,10 @@ Dataset used can refer to [paper](http://www.cv-foundation.org/openaccess/conten
 - run on GPU
 
 ```
-\\# run training example
+# run training example
 python pix2pix.py --phase train
 
-\\# run metric values caculation example
+# run metric values caculation example
 python evaluate.py
 ```
 
@@ -146,7 +146,9 @@ Mean class IoU: 0.168609
 |G7-D4(TruncNormal)|0.57|0.22|0.14|
 |G8-D4(TruncNormal)|0.61|0.24|0.16|
 |G8-D3(Normal)|0.62|**0.25**|0.16|
+
 - Metrics in [paper](https://arxiv.org/pdf/1703.10593.pdf)
+
 |Parameter|Mean pixel accuracy|Mean class accuracy|Mean class IoU|
 |:-|:-:|:-:|:-:|
 |G8-D3|**0.66**|**0.23**|**0.17**|
@@ -178,6 +180,7 @@ Mean class IoU: 0.168609
 |bicycle        | 0.000026|0.000026|
 
 - Parameters 
+
 |Parameters         | GPU                        |
 |:-|:-:|
 |Model Version      |  pix2pix                   |
