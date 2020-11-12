@@ -47,7 +47,7 @@ Decoder:  CD512-CD1024-CD1024-C1024-C1024-C512-C256-C128
 - Discriminator
 C64-C128-C256-C512
 
-C is Convlution and CD is Convolution followed by concatenate. The kernel size is 4×4 both in generator and descriminator.
+**Note:**C is Convlution and CD is Convolution followed by concatenate. The kernel size is 4×4 both in generator and descriminator.
 
 # Dataset
 
@@ -62,7 +62,7 @@ Dataset used can refer to [paper](http://www.cv-foundation.org/openaccess/conten
 
 # Features
 
-** G and D alternating train**
+**G and D alternating train**
 
 # Environment Requirements
 
@@ -153,6 +153,7 @@ Mean class IoU: 0.168609
 |:-|:-:|:-:|:-:|
 |G8-D3|**0.66**|**0.23**|**0.17**|
 |GT|0.80|0.23|0.17|
+
 **Compare:** In our implementation, the **Mean pixel accuracy** slightly droped, while the **Mean class accuracy** increased by 0.02 **(0.23 --> 0.25)**. The **Mean class IoU** keeps the same with raw implementation.
 
 - Detailed each class segmentation results are given below
@@ -191,7 +192,7 @@ Mean class IoU: 0.168609
 |Training Parameters|epoch=200, step: 595000, batch_size=1, lr=2*1e-3|
 |Optimizer          | Adam(beta1=0.5, beta2=0.999)|
 |Loss Function      | L1, Binary Cross Entropy   |
-|Loss		        | G: 10~30  D: 0.01~1.5      |
+|Loss		        | G: 10-30  D: 0.01-1.5      |
 |Speed				| 1pc: 53 ms/step            |
 |Total time         | 1pc: 8.7 hours			 |
 |Parameters (M)     | G: 207  D:105              |
